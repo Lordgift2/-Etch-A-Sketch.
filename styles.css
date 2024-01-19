@@ -1,4 +1,5 @@
-.grid{
-    display: flexbox;
-    
-}
+.sketchBoard{
+    width: 500px;
+    display: grid;
+    height: 500px;
+}    
