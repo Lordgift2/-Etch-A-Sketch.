@@ -13,13 +13,18 @@
     <div class="content">
         <div class="sketchBoard"></div>   
         <div class="buttons">
-            <button >Black</button>
-            <button >White</button>
-            <button >RGB</button>
-            <button >Reset</button>
+            <button onclick="changeColor('black')">Black</button>
+            <button onclick="changeColor('white')">Ereser</button>
+            <button onclick="changeColor('blue')">Blue</button>
+            <button onclick="changeColor('random')">RGB</button>
+            <button onclick="resetBoard()">Reset</button>
         </div>
         <div>
-        <input id="input" type="text" placeholder="size of board" value="16">
+        <input id="input" 
+            type="text" 
+            placeholder="size of board" 
+            value="16" 
+            onchange="changeSize(this.value)">
         <button>Set size</button>
         </div>
     </div>
