@@ -29,10 +29,11 @@ porpulateBoard(16);
 
 function changeSize(input){
     if(input >= 2 && input<=100){
+        document.querySelector(".error").style.display='none';
     porpulateBoard(input);
     }
     else{
-        console.log("squaresize is too high");
+        document.querySelector(".error").style.display='flex'
     }  
 };
 function changeColor(choice){
@@ -47,3 +48,4 @@ let clickBtn= document.querySelector('body');
 clickBtn.addEventListener("click",()=>{
     click=!click
 });
+
