@@ -1,5 +1,78 @@
+.container{
+    height: 100vh; width:100vw; display:flex ; flex-direction: column;
+    align-items: center;background:linear-gradient(rgba(96,79,252,0.082), white) ;
+}
 .sketchBoard{
-    width: 500px;
+    width: 80%;
     display: grid;
-    height: 500px;
-}    
+    height: 80%;
+    background-color: white;
+    box-shadow: inset 0-3em rgba(0,0,0,0.1),0 0 0 2px rgba(255,255,255),o.3em,0.3em,1em,
+    rgba(0, 0, 0.3);
+}   
+.board:hover{
+    cursor: pointer;
+} 
+.content{
+    display: flex; 
+    flex-direction: column;
+    align-items:center ;
+    min-width:300px;
+    min-height: 300px;
+    width: 60vw;
+    height: 60vw;
+    max-width: 600px;
+    max-height:  600px ;
+}
+.tittle{
+    display: flex;
+    justify-content: center;
+}
+.buttons{
+    padding:0.3em 1.2em ;
+    border-radius: 2em;
+    margin: 0.3em o.3em 0;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    transition:all 0.2s;
+}
+button:hover{
+    cursor: pointer;
+}
+.blackbtn{
+    background-color: black;
+    color: white;
+}
+.ereserbtn{
+    background-color: white;
+    color: black;
+}
+.graybtn{
+    background-color:rgba(128,128,128,0.411);
+    color:white;
+}
+.randombtn{
+    background: linear-gradient(0.25turn, #f65cfc,#ebf8e1,#583cfc);
+}
+.randombtn:hover{
+    background: linear-gradient(0.25turn, #ddab07,#e76c07,#12ca1b);
+}
+.ereserbtn{
+    background-color: whitesmoke;
+    color:black;
+}
+.ereserbtn:hover{
+    background-color: whitesmoke;
+    color:white;
+}
+input{
+    width: 50px; 
+}
+.error{
+    display: none;
+}
+
+
+
+
