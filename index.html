@@ -10,14 +10,15 @@
 <body>
 <div class="container">
     <div class="tittle"><h1>Etech-Sketch_Pad</h1></div>
+    <div class="mode">Click and Hover to Start Coloring</div>
     <div class="content">
         <div class="sketchBoard"></div>   
         <div class="buttons">
-            <button onclick="changeColor('black')">Black</button>
-            <button onclick="changeColor('white')">Ereser</button>
-            <button onclick="changeColor('blue')">Blue</button>
-            <button onclick="changeColor('random')">RGB</button>
-            <button onclick="resetBoard()">Reset</button>
+            <button class="blackbtn"  onclick="changeColor('black')">Black</button>
+            <button class="ereserbtn" onclick="changeColor('white')">Ereser</button>
+            <button class="graybtn"   onclick="changeColor('gray')">Gray</button>
+            <button class="randombtn" onclick="changeColor('random')">RGB</button>
+            <button  onclick="resetBoard()">Reset</button>
         </div>
         <div>
         <input id="input" 
