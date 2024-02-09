@@ -46,7 +46,7 @@ resetBoard=()=>{
 }
 let clickBtn= document.querySelector('body');
 clickBtn.addEventListener("click",()=>{
-    click=!click;
+    click= !click;
     if(click){
         document.querySelector(".mode").textContent="Mode: Colouring";
     }
